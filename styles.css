@@ -28,7 +28,7 @@ h2 {
 .links a:hover {
     /* padding: 3px; */
     border-bottom: 2px solid white; 
-    transition: all .2s;
+    transition: all .25s;
 }
 
 
@@ -67,10 +67,6 @@ h2 {
     font-size: 1.4rem;
     margin: 0 18%;
     padding-top: 25px;
-}
-
-#flex-nav ul li{
-
 }
 
 #flex-nav li a{
@@ -172,7 +168,38 @@ footer p {
 
 .img-align {
     margin-left: 11%;
-    border-radius: 20px;
+    height: 350px;
+    width: 593px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px
+}
+
+.img-align img {
+    height: 350px;
+
+}
+
+.img-align figcaption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+    padding: 15px;
+    width: 100%;  
+    transform: translateY(100%);
+}
+
+.img-align:hover img{
+    transform: scale(1.1);
+    transition: all 1.5s;
+}
+
+.img-align:hover figcaption {
+    transform: translateY(0);
+    transition: all .5s;
 }
 
 .shrink {
