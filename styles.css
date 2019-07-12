@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -25,10 +26,10 @@ h2 {
 }
 
 .links a:hover {
-    border-bottom: 2px solid white;
-    padding-bottom: 5px;
+    /* padding: 3px; */
+    border-bottom: 2px solid white; 
+    transition: all .2s;
 }
-
 
 
 /* Title Section  */
@@ -53,26 +54,23 @@ h2 {
 
 /* Navbar styles */
 #flex-nav{
-    height: 107px;
+    height: 85px;
     background: #323232;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
 }
 
 #flex-nav ul{
     display: flex;
-    align-content: space-around;
+    justify-content: space-around;
     list-style: none;
     font-family: 'Open Sans',serif;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
     font-size: 1.4rem;
+    margin: 0 18%;
+    padding-top: 25px;
 }
 
 #flex-nav ul li{
-    flex: 1;
-    padding: 2% 0 2.2% 6%;
+
 }
 
 #flex-nav li a{
@@ -83,7 +81,7 @@ h2 {
 
 /* Main Content */
 #main {
-    margin: 10% 20% 6% 20%;
+    margin: 5% 20% 6% 20%;
     font-family: Noto Serif;
     font-style: normal;
     font-weight: normal;
@@ -93,22 +91,31 @@ h2 {
 }
 
 .btn {
-    margin: 10% 35%;
+    margin: 8% 35% 5% 35%;
     text-align: center;
-    width: 348px;
-    height: 85px;
-    background: rgba(125, 177, 55, 0.88);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    height: 65px;
+    background: rgba(119, 166, 57, 0.88);
+    box-shadow: 0 8px rgba(48, 68, 22, 0.88);
     font-family: Open Sans;
+    letter-spacing: 2px;
     font-style: normal;
     font-weight: normal;
-    line-height: 45px;
+    border-radius: 5px;
+    line-height: 65px;
     font-size: 24px;
+    position: relative;
 }
 
 .btn a {
     color: black;
     text-decoration: none;
+}
+
+.btn:active {
+    box-shadow: none;
+    top: 8px;
+    transition: all .5s;
 }
 
 footer {
