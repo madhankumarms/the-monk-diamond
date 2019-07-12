@@ -1,0 +1,241 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Noto Serif',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 72px;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 64px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+
+
+/* Title Section  */
+.banner {
+    height: 375px;
+    background: rgba(119, 166, 57, 0.88);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.banner-text {
+    padding: 5% 0;
+}
+
+.banner-text p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+}
+
+/* Navbar styles */
+#flex-nav{
+    height: 107px;
+    background: #323232;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+#flex-nav ul{
+    display: flex;
+    align-content: space-around;
+    list-style: none;
+    font-family: 'Open Sans',serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 1.4rem;
+}
+
+#flex-nav ul li{
+    flex: 1;
+    padding: 2% 0 2.2% 6%;
+}
+
+#flex-nav li a{
+    text-decoration: none;
+    color: white;
+}
+/* Add navbar indicator here */
+
+/* Main Content */
+#main {
+    margin: 10% 20% 6% 20%;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 45px;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.btn {
+    margin: 10% 35%;
+    text-align: center;
+    width: 348px;
+    height: 85px;
+    background: rgba(125, 177, 55, 0.88);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 45px;
+    font-size: 24px;
+}
+
+.btn a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    height: 89px;
+    background: #323232;
+    text-align: center;    
+}
+
+footer p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 1.5%;
+    font-size: 24px;
+    color: white;
+}
+
+.footer-all {
+    margin: 8% auto 0 auto;
+}
+
+/***********************  Diamond Page ************************/
+
+.heading {
+    margin: 4.4% 20% 6% 11%;
+}
+
+.heading h2 {
+    border-left: 4px solid black;
+    padding-left: 18px;
+    display: inline-block;
+}
+
+.diamond {
+    position: relative;
+    top: 30px; 
+    left: 22px;
+    width: 97px;
+    height: 92px;
+    transform: rotate(5.71deg);
+}
+
+.main-para {
+    margin: 2.2% 20% 1% 11%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 45px;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+/***********************  Discovery Page ************************/
+
+.img-align {
+    margin-left: 11%;
+    border-radius: 20px;
+}
+
+.shrink {
+    margin: 2.2% 36% 1% 11%;
+}
+
+/***********************  Exhibition Page ************************/
+
+.exhibition {
+    width: 810px;
+    height: 323px;
+    padding: 10px;
+    border: 3px solid black; 
+}
+
+.exhibition-content, #hov-content {
+    width: 800px;
+    margin: .8% 0 -3% 11%;
+    padding: 2%;
+    line-height: 2.8;
+    font-family: 'Montserrat';
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.exhibition-content h3 {
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.main-time{
+    font-size: 1.3rem;
+}
+
+.main-time ul li{
+    margin-left: 75px;
+}
+
+/***********************  House of Volkov Page ************************/
+
+#hov-content {
+    position: relative;
+    width: 700px;
+    margin: 0 0 3% 11%;
+    padding: 1%;
+}
+
+.address-head{
+    display: block;
+}
+
+.address {
+    margin-left: 75px;
+    text-align: left;
+    /* height: 200px; */
+    /* width: 200px; */
+}
+
+.right {
+    position: absolute;
+    right: -700px;
+    bottom: -52px;
+}
+
+/* Media Queries  */
+
+@media (max-width: 1400px)
+{
+    #flex-nav ul{
+        display: block;
+        flex-direction: column;
+    }
+}
