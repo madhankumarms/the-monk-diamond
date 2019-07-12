@@ -89,30 +89,29 @@ h2 {
 .btn {
     margin: 8% 35% 5% 35%;
     text-align: center;
-    width: 300px;
+    width: 270px;
     height: 65px;
     background: rgba(119, 166, 57, 0.88);
-    box-shadow: 0 8px rgba(48, 68, 22, 0.88);
-    font-family: Open Sans;
+    font-family: 'Open Sans';
     letter-spacing: 2px;
     font-style: normal;
     font-weight: normal;
     border-radius: 5px;
     line-height: 65px;
-    font-size: 24px;
+    font-size: 20px;
     position: relative;
 }
 
 .btn a {
-    color: black;
+    color:rgba(0, 0, 0, 0.685);
     text-decoration: none;
 }
 
-.btn:active {
-    box-shadow: none;
-    top: 8px;
-    transition: all .5s;
+.btn:hover {
+    transform: scale(1.1);
+    transition: all .8s;
 }
+
 
 footer {
     height: 89px;
